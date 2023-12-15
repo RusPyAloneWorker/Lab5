@@ -30,13 +30,12 @@ void printLines(FILE* file, int N)
 	while (1)
 	{
 		ch = getc(file);
-		if (ch == '\n') // Говорят, что \n может не сработать
+		if (ch == '\n') 
 		{
 			_count++;
-			//rintf("It's symbol: %d", ch); // ch == '\n' || ch == 13 || 124
 		}
 		
-		if (_count == N) 
+		if (N != 0 && _count == N) 
 		{
 			char user_input = getc(stdin);
 			if (user_input != NULL)
