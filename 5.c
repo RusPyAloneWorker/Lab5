@@ -41,8 +41,8 @@ int main(int argc, char *argv[]) {
 
 void print(DIR *dir)
 {
-	struct dirent *entry;
-	// Выводим содержимое каталога
+    struct dirent *entry;
+    // Выводим содержимое каталога
     while ((entry = readdir(dir)) != NULL) {
         if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0) // string comprasion. Одинаковы => 0
         	continue;
