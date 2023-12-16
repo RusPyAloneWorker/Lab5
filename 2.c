@@ -3,8 +3,8 @@
 
 int main(int argc, char *argv[]) 
 {
-	if (argc < 2) 
-	{
+    if (argc < 2) 
+    {
         printf("Необходимо указать имя файла\n");
         return 1;
     }
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
  			perror("Fail to write in file\n");
  			exit(EXIT_FAILURE);
  		}
-    }
+    	}
 
 	if(fclose(file) == EOF) {
  		perror("Fail to close file \n");
