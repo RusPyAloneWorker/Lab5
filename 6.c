@@ -30,12 +30,12 @@ int main(int argc, char *argv[]) {
 
 void get_data(char* dir_path, FILE *file)
 {
-	char* biggest_file;
-	int files_count = 0;
-	long biggest_size = 0;
-	long dir_size = 0;
-	char path[250];
-	char new_dir[250];
+    char* biggest_file;
+    int files_count = 0;
+    long biggest_size = 0;
+    long dir_size = 0;
+    char path[250];
+    char new_dir[250];
     struct dirent *entry;
     
     if (realpath(dir_path, path) == NULL)  // Абсолютный путь 
